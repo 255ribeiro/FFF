@@ -16,6 +16,7 @@ po = 0.0
 
 # %% Parameters
 # spans size
+
 stpX = 2.5
 stpY = stpX
 
@@ -24,20 +25,20 @@ nX = 10
 nY = 12
 
 # floor to floor distance
-ffd = 3.0
+ffd = 3.2
 
 # number of floors
 nZ = 5
 
 # %% Creating auxiliary vectors
 # aux vec X
-avX = np.linspace(po, po + (nX * stpX) , num = nX + 1 )
+avX = np.linspace(po, po + (nX * stpX) , num = nX + 1 , dtype= float)
 print(avX)
 # aux vec Y
-avY = np.linspace(po, po + (nY * stpY) , num = nY + 1 )
+avY = np.linspace(po, po + (nY * stpY) , num = nY + 1, dtype= float )
 print(avY)
 # aux vec Z
-avZ = np.linspace(po, po + (nZ * ffd) , num = nZ + 1 )
+avZ = np.linspace(po, po + (nZ * ffd) , num = nZ + 1 , dtype= float)
 print(avZ)
 
 # %%
