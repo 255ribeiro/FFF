@@ -1,4 +1,6 @@
+#! python3
 # -*- coding: utf-8 -*-
+
 """
 Created on Fri Apr 20 11:57:56 2018
 
@@ -7,24 +9,35 @@ Created on Fri Apr 20 11:57:56 2018
 
 import numpy as np
 import matplotlib.pyplot as plt
+%matplotlib inline
 
+# %% start point
+po = 0.0
 
-#%%
+# %% Parameters
+# spans size
+stpX = 2.5
+stpY = stpX
 
-# ponto inicial
-po = 0
-#tamanho do passo
-stp = 2.5
-#número de intervalos
+# number of spans
 nX = 10
-nY = 20
-# criando vetor de medidas equidistantes
-mvX = np.linspace(po, po+ (nX * stp) , num = nX +stp )
+nY = 12
 
-mvY = np.linspace(po, po+ (nY * stp) , num = nY +stp )
-#%%
+# floor to floor distance
+ffd = 3.0
 
+# number of floors
+nZ = 5
 
-xx = np.meshgrid(mvX,mvX).reshape(2,-1).T
-print(xx)
+# %% Creating auxiliary vectors
+# aux vec X
+avX = np.linspace(po, po + (nX * stpX) , num = nX + 1 )
+print(avX)
+# aux vec Y
+avY = np.linspace(po, po + (nY * stpY) , num = nY + 1 )
+print(avY)
+# aux vec Z
+avZ = np.linspace(po, po + (nZ * ffd) , num = nZ + 1 )
+print(avZ)
 
+# %%
