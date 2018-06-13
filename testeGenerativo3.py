@@ -7,13 +7,21 @@ Created on Tue Jun 12 19:51:00 2018
 
 from timeit import default_timer as timer
 
+
+
+
 import sys
 sys.path.append('C:/Tcl/')
+
 from opensees import *
 
 import numpy as np
 
+
+
 start = timer()
+
+
 
 # Destroy all constructed objects (clear all)
 wipe()
@@ -37,14 +45,21 @@ Dz = 3.
 
 # Definição da função com o Número de nós Npts e índice dos nós (tags) I
 Npts = Nx*Ny*Nz
-I = np.arange(0, Npts, 1)
-X = (I % Nx)*Dx
-Y = ((I % (Nx*Ny))//Nx)*Dy
-Z = ((I // (Nx*Ny)) + 1)*Dz
+IL = range(0, Npts, 1)
 
 
+def nodelist(I):
+
+    return node(I, (I % Nx)*Dx, ((I % (Nx*Ny))//Nx)*Dy, ((I // (Nx*Ny)) + 1)*Dz)
 #    node(int(I[i]), float((I[i] % Nx)*Dx), float(((I[i] % (Nx*Ny))//Nx)*Dy), float(((I[i] // (Nx*Ny)) + 1)*Dz))
-map(node, zip(I, X, Y, Z))
+
+list(map(nodelist, IL))
+a = nodeCoord(2)
+print(a)
+
+
+
+
 
 
 
