@@ -54,6 +54,8 @@ def nodelist(I):
 #    node(int(I[i]), float((I[i] % Nx)*Dx), float(((I[i] % (Nx*Ny))//Nx)*Dy), float(((I[i] // (Nx*Ny)) + 1)*Dz))
 
 list(map(nodelist, IL))
+
+#testando se os nós foram criados
 a = nodeCoord(2)
 print(a)
 
