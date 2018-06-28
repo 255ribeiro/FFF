@@ -45,9 +45,9 @@ Dz = 3.
 
 # Definição da função com o Número de nós Npts e índice dos nós (tags) I
 Npts = Nx*Ny*Nz
-for i in range(0, Npts, 1):
-
-    return node(I, (I % Nx)*Dx, ((I % (Nx*Ny))//Nx)*Dy, ((I // (Nx*Ny)) + 1)*Dz)
+for I in range(0, Npts, 1):
+    
+    node(I, (I % Nx)*Dx, ((I % (Nx*Ny))//Nx)*Dy, ((I // (Nx*Ny)) + 1)*Dz)
 #    node(int(I[i]), float((I[i] % Nx)*Dx), float(((I[i] % (Nx*Ny))//Nx)*Dy), float(((I[i] // (Nx*Ny)) + 1)*Dz))
 
 
@@ -55,7 +55,7 @@ for i in range(0, Npts, 1):
 a = nodeCoord(2)
 print(a)
 
-
+p
 
 
 
