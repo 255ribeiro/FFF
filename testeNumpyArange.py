@@ -6,10 +6,10 @@ Created on Fri Apr 20 11:57:56 2018
 
 @author: ffrib
 """
-
+#%% imports
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 # %% start point
 po = 0.0

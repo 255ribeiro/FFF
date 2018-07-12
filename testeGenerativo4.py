@@ -56,7 +56,7 @@ for i in range(Npts):
     
 
 teste = nodeCoord(127)
-
+print(teste)
 #Contador de tempo
 dt = timer() - start
 print ("O tempo de execucao foi de %f s" % dt)
