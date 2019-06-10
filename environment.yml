@@ -1,0 +1,109 @@
+name: GPD_OSM_RASTERIO
+
+
+channels:
+  
+
+- conda-forge
+
+
+dependencies:
+
+
+# Core scientific python
+  
+- numpy
+  
+- matplotlib
+  
+- python=3.6
+  
+- pyqt
+  
+- seaborn
+
+ 
+
+# Extensions
+  
+- autopep8
+
+  
+
+# Geo stuff
+  
+- rasterstats
+  
+- geopy
+  
+- cartopy
+  
+- geopandas
+ 
+ - rasterio
+ 
+ - contextily
+  
+- pysal
+ 
+ - pyproj
+ 
+ - folium
+  
+- scikit-image
+  
+- gdal
+  
+- libgdal
+  
+- kealib
+  
+- geocoder
+ 
+- geojson
+
+ 
+
+# Natural language processing
+  
+- tweepy
+  
+- nltk
+  
+- textblob
+
+  
+
+# Jupyter Environment
+  
+- notebook
+  
+- ipython
+  
+- jupyter_contrib_nbextensions
+ 
+- jupyterlab
+  
+- nb_conda
+
+
+ 
+- pip:
+      
+
+# Utilities
+      
+- download
+     
+ - nbgrader
+      
+- nbclean
+      
+- mne
+     
+ - tqdm
+     
+ - kiwisolver
+      
+
+

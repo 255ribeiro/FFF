@@ -1,7 +1,6 @@
 import sys
-sys.path.append('C:/Tcl/')
 
-from opensees import *
+from openseespy.opensees import *
 from math import asin, sqrt
 
 import numpy as np
